@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38314b0ce6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+<body class="bg-light">
+    
+    <nav class="navbar fixed-top navbar-light bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Logo 1</a>
+            <span class="navbar-text">
+            <a class="navbar-brand text-white" href="#">Logo 2</a>
+            </span>
+        </div>
+      </nav>
+
+   
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+               <nav aria-label="..." style="margin-top: 100px;">
+                   <ul class="pagination">
+                     <li class="page-item" ><a class="page-link" href="#">1</a></li>
+                     <li class="page-item " ><a class="page-link" href="#">2</a></li>
+                    
+                     <li class="page-item " ><a class="page-link" href="page3.html">3</a></li>
+                     <li class="page-item"><a class="page-link" href="#">4</a></li>
+                     <li class="page-item"><a class="page-link" href="#">5</a></li>
+                     <li class="page-item active" aria-current="page"><a class="page-link" href="page6.html">6</a></li>
+                     <li class="page-item"><a class="page-link" href="#">7</a></li>
+                     <li class="page-item"><a class="page-link" href="#">8</a></li>
+                     <li class="page-item"><a class="page-link" href="#">9</a></li>
+                    
+                   </ul>
+                 </nav>
+            </div>
+            <div class="col-md-3" >
+               
+            </div>
+            <div class="col-md-3" id="count">
+               <div class="countdown"></div>
+            </div>
+        </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                <div class="card ">
+                    <div class="card-header bg-white">
+                        Question : 6/9
+                        <div >
+                            <i class="fa fa-minus" id="minus"></i>
+  
+                            <i class="fa fa-times" id="times"></i>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-md-7">
+                              <div class="card-body ">
+                                  <p class="text-justify-center">
+                                    Now this is a paragraph question for a test to check that if this paragraph is displayed properly too
+                                  the user in a different div or not, i hope this works fine. Apart from that it will also be tested that
+                                   this question is inserted in thee DB completely or not as this is a long test
+                                  </p>
+                                  <ul>
+                                      <li>Point 1</li>
+                                      <li>Point 2</li>
+                                      <li>Point 3</li>
+                                      <li>Point 4</li>
+                                  </ul>
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="card-body">
+                                <p class="text-justify-center ">
+                                    This is a paragraph based question 4 for verbal 2&#9650;BCAx<sup>22</sup>+X<sup>25+vx</sup>
+                                </p>
+                                <div>
+                                    <label><input type="radio"  id="options" name="options" value="options"> option A</label>
+                                </div>
+                                <div>
+                                    <label><input type="radio" id="options" name="options" value="options"> option B</label>
+                                </div>
+                                <div>
+                                    <label><input type="radio" id="options" name="options" value="options"> option C</label>
+                                </div>
+                                <div>
+                                    <label><input type="radio" id="options" name="options" value="options"> option D</label>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <label><input type="checkbox"> Mark for Review</label>
+                        <button class="btn btn-info text-white" id="button"> Clear</button>
+                    </div>
+                </div>
+              </div>
+             
+          </div>
+      </div>
+    
+
+     <div class="container" id="buttons">
+         <div class="row">
+             <div class="col-md-4" id="btn1">
+                 <button class="btn btn-info text-white"><i class="fas fa-arrow-circle-left"> Prev</i></button>
+             </div>
+             <div class="col-md-4" id="btn2">
+                <button class="btn btn-primary text-white"><i class="fas fa-arrow-circle-right"> Next</i></button>
+             </div>
+             <div class="col-md-4" id="btn3">
+                <button class="btn btn-success text-white">Submit</button>
+             </div>
+         </div>
+     </div>
+</body>
+<script src="app.js"></script>
+</html>
